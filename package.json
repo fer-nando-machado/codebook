@@ -1,8 +1,7 @@
 {
   "name": "codebook",
-  "homepage": "https://fernandomachado90.github.io/codebook",
+  "homepage": "https://fer-nando-machado.github.io/codebook",
   "version": "1.0.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
