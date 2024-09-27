@@ -2,7 +2,7 @@ export const placeholder = {
   html: `<body>
     <h1>Olá!</h1>
     <p>
-        Boas-vindas ao <b>CodeBook</b>!
+        Eu sou o <b>CodeBook</b>!
     </p>
 </body>
 `,
@@ -11,4 +11,4 @@ export const placeholder = {
 };
 `,
   js: undefined,
-}
+};
