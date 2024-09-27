@@ -95,7 +95,7 @@ export const body = (
       contribuições da comunidade.
     </p>
 
-    <p>Essa é uma lista das pessoas quem já passou por aqui:</p>
+    <p>Essa é uma lista de quem já passou por aqui:</p>
 
     <ul>
       <li>Fernando Machado</li>
