@@ -1,24 +1,24 @@
-import React from "react"
-import { HashRouter as Router, Switch, Route, useParams } from "react-router-dom"
-import "./App.css"
-import Book from "./Book"
-import Code from "./Code"
+import React from "react";
+import { HashRouter as Router, Routes, Route, useParams } from "react-router-dom";
+import "./App.css";
+import Book from "./Book";
+import Code from "./Code";
 
 function BookWithParams() {
-  const { page } = useParams()
-  return <Book page={page} className="Box Single" />
+  const { page } = useParams();
+  return <Book page={page} className="Box Single" />;
 }
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" children={<BookWithParams />} />
-        <Route path="/:page" children={<BookWithParams />} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<BookWithParams />} />
+        <Route path="/:page" element={<BookWithParams />} />
+      </Routes>
       <Code title="CodeBook" className="Box Double" />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

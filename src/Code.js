@@ -1,8 +1,16 @@
-import React from "react"
-import "./Code.css"
-import { placeholder } from "./code/placeholder"
+import React, { useEffect } from "react";
+import "./Code.css";
+import { placeholder } from "./code/placeholder";
 
 function Code({ title = "", html, css, js, className }) {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://static.codepen.io/assets/embed/ei.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
+
   return (
     <div className={`Code ${className}`}>
       <div
@@ -20,7 +28,7 @@ function Code({ title = "", html, css, js, className }) {
         <pre data-lang="js">{js || placeholder.js}</pre>
       </div>
     </div>
-  )
+  );
 }
 
-export default Code
+export default Code;

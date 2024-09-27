@@ -3,13 +3,13 @@
   "homepage": "https://fer-nando-machado.github.io/codebook",
   "version": "1.0.0",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^13.1.9",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3"
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "format": "prettier --write --no-semi --trailing-comma es5 --print-width 120 .",
@@ -36,7 +36,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0",
-    "prettier": "^2.1.2"
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.3.3"
   }
 }
